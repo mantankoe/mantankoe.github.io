@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Grandstander', cursive; */
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    opacity: .7;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Slider */
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;    
+}
+
+.carousel-indicators li {
+    margin: 0 0.5rem;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* Programs */
+
+.programs {
+    min-height: 100vh;
+}
+
+.programs-title {
+    text-align: center;
+    text-transform: uppercase;  
+    font-weight: bold;  
+}
+
+.card {
+    width: 20rem;
+    text-align: center;
+}
+
+/* CSS RESET */
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+/* Global Style */
+
+body {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #545454;
+    color: #eae2b7;
+}
+
+a {
+    color: #eae2b7;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Area */
+
+header {
+    width: 100%;
+    background-color: #1a1818;    
+}
+
+header a {
+    color: #eae2b7;
+    font-weight: 600;
+}
+
+.logo {
+   display: inline;
+}
+
+.logo img {
+    width: 72px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+nav {
+  float: right;
+  padding-top: 23px;
+  padding-bottom: 28px;
+}
+
+.nav-links {
+    margin: 0 15px;
+}
+
+/* Banner Area */
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(202, 15, 15, 0.2);
+    position: absolute;  
+    bottom: 0;  
+}
+
+.banner-content-text {
+    background-color: rgb(243, 17, 17);    
+}
+
+.banner-content-text-group {
+    position: absolute;
+    top: 30%;
+}
+
+.banner-content-text-group h1 {
+    font-size: 48px;
+    color:#eae2b7;
+    
+}
+
+.banner-content-text-group h3 {
+    font-size: 24px;
+    font-family: cursive;
+    margin-bottom: 36px;
+    color: #eae2b7;
+}
+
+.banner-button {
+    padding: 16px 24px;
+    background-color: #181515;
+    color: #eae2b7;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* Menu Area */
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: black;
+}
+
+.menu h2 {
+    padding: 36px 0;
+    font-size: 36px;
+    color:#eae2b7;
+}
+
+.menu-slider {
+    position: relative;
+}
+
+.menu-slider-card {
+    width: 24.5%;
+    background-color: floralwhite;
+    color: #0e0c0c;
+    display: inline-block;
+}
+
+.menu-slider-card-details * {
+    color: #181717
+}
+
+.menu-slider-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.menu-slider-card-details {
+
+    padding: 36px 0;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #545454;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: black;
+}
+
+.menu-slider-slides {
+    width: 100%;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+.order {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+footer {
+    background-color: white;
+    color: #eae2b7;
+    padding: 23.5px 0;
+    text-align: center;
+}
